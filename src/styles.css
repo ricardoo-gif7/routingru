@@ -1,1 +1,163 @@
-/* You can add global styles to this file, and also import other style files */
+/* Paleta de colores pastel */
+:root {
+    --primary-color: #a9ce9e; /* Azul pastel suave */
+    --secondary-color: #a6c6c1; /* Gris suave claro */
+    --secondary-color1: #f1f5f9; /* Gris suave claro */
+    --background-color: #f1f5f9; /* Fondo gris claro */
+    --text-color: #6e6e6e; /* Texto gris oscuro */
+    --text-color-btn: #ffffff; /* Blanco sucio para texto */
+    --text-secondary-color: #635757; /* Gris suave para texto secundario */
+    --hover-color: #242424; /* Azul más fuerte para hover */
+    --highlight-color: #2b2b2b; /* Gris azulado pastel para botones */
+    --button-bg-color: #2e2e2e; /* Gris oscuro para botones */
+    --button-hover-color: #2b2b2b; /* Gris más oscuro para hover */
+  }
+  
+  /* Estilo global */
+  body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  
+  /* Contenedor principal */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Estilo de la barra de navegación */
+  nav {
+    background-color: var(--primary-color);
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  nav ul li {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: var(--text-color-btn);
+    font-size: 1.2rem;
+    transition: color 0.3s;
+  }
+  
+  nav ul li a:hover {
+    color: var(--highlight-color);
+  }
+  
+  /* Contenido de la página */
+  .section {
+    padding: 40px 0;
+  }
+  
+  .section h1 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+  }
+  
+  .section p {
+    font-size: 1.1rem;
+    color: var(--text-secondary-color);
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilo para el about component */
+  .about {
+    background-color: var(--secondary-color1);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  .about-title h2 {
+    font-size: 2rem;
+    color: var(--button-hover-color);
+    margin-bottom: 10px;
+  }
+  
+  .about p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+  }
+  
+  
+  /* Estilo para el contact component */
+  .contact {
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  .contact h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .contact p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+  }
+  
+  .contact form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact form input,
+  .contact form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .contact form button {
+    background-color: var(--primary-color);
+    color: var(--text-color-btn);
+    border: none;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .contact form button:hover {
+    background-color: var(--hover-color);
+  }
+  
+  /* Responsividad */
+  @media (max-width: 768px) {
+    .section h1 {
+      font-size: 2rem;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .container {
+      padding: 10px;
+    }
+  }
+  

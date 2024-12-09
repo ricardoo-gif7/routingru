@@ -1,6 +1,29 @@
-.component-text {
-    font-family: 'Arial', sans-serif;
-    font-size: 34px;
-    font-weight: bold;
-  }
-  
+/* Diseño de Home */
+.home-container {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.home-title {
+  font-size: 3rem;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+
+.home-description {
+  font-size: 1.2rem;
+  color: var(--text-secondary-color);
+  margin-bottom: 30px;
+}
+
+/* Animación de bienvenida */
+.home-img {
+  max-width: 250px;
+  border-radius: 50%;
+  margin-top: 20px;
+  transition: transform 0.3s ease;
+}
+
+.home-img:hover {
+  transform: scale(1.1);
+}

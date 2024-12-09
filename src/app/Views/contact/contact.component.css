@@ -1,5 +1,44 @@
-.component-text {
-    font-family: 'Arial', sans-serif;
-    font-size: 34px;
-    font-weight: bold;
-  }
+/* Diseño de Contact */
+.contact-container {
+  padding: 50px 20px;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  border-radius: 8px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.contact-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  padding: 12px 30px;
+  background-color: var(--button-bg-color);
+  border-radius: 50px;
+  border: none;
+  color: var(--text-color);
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: var(--button-hover-color);
+}

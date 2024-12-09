@@ -1,5 +1,30 @@
-.component-text {
-    font-family: 'Arial', sans-serif;
-    font-size: 34px;
-    font-weight: bold;
-  }
+/* Diseño de About */
+.about-container {
+  padding: 50px 20px;
+  background-color: var(--secondary-color);
+  border-radius: 8px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.about-title {
+  font-size: 2.5rem;
+  color: var(--text-secondary-color);
+  margin-bottom: 20px;
+}
+
+.about-text {
+  font-size: 1.1rem;
+  color: var(--text-secondary-color);
+  margin-bottom: 30px;
+}
+
+.about-image {
+  max-width: 200px;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.about-image:hover {
+  transform: scale(1.1);
+}

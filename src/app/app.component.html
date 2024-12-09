@@ -1,9 +1,13 @@
-<nav class="navbar">
-  <a routerLink="/home" routerLinkActive="active">Home</a>
-  <a routerLink="/about" routerLinkActive="active">About</a>
-  <a routerLink="/contact" routerLinkActive="active">Contact</a>
-</nav>
+<header>
+  <nav>
+    <ul>
+      <li><a routerLink="/home">Home</a></li>
+      <li><a routerLink="/about">About</a></li>
+      <li><a routerLink="/contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
 
-<div class="outlet-container">
+<main class="container">
   <router-outlet></router-outlet>
-</div>
+</main>
